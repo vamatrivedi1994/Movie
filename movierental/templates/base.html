@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href='{% static "movierental/nav.css" %}'>
+
+<body>
+<h1><center><b>MOVIE RENTAL</b></center></h1>
+  <ul id="nav">
+    <li><a href='{% url "available" %}'>Available</a></li>
+    <li><a href='{% url "rented" %}'>Rented</a></li>
+    <li><a href='{% url "movies" %}'>Movies</a></li>
+    <li><a href='{% url "customer" %}'>Customer</a></li>
+    <li><a href='{% url "addmovie" %}'>Add Movie</a></li>
+    <li><a href='{% url "addcustomer" %}'>Add Customer</a></li>
+  </ul>
+  {% block nav %}
+
+  {% endblock %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block nav %}
+<form method="post" action="">
+{% csrf_token %}
+<table>
+{{MovieForm}}
+</table>
+<input type="submit" value="Submit Form"/>
+</form>
+
+
+{% endblock %}

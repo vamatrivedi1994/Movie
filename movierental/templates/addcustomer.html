@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block nav %}
+<form method="post" action="">
+{% csrf_token %}
+<table>
+{{CustomerForm}}
+</table>
+<input type="submit" value="Submit Form"/>
+</form>
+{% endblock %}
